@@ -47,7 +47,7 @@ const replaceTemplate = require('./modules/replaceTemplate'); // we are saving t
 
 const tempOverview = fs.readFileSync(`${__dirname}/templates/template-overview.html`, 'utf-8');
 const tempCard = fs.readFileSync(`${__dirname}/templates/template-card.html`, 'utf-8');
-const tempProduct = fs.readFileSync(`${__dirname}/templates/template-product.html`, 'utf-8');
+const tempRecipe = fs.readFileSync(`${__dirname}/templates/template-recipe.html`, 'utf-8');
 
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
 const dataObj = JSON.parse(data);
@@ -63,14 +63,15 @@ const server = http.createServer((req, res) => {       // each time a new reques
         res.writeHead(200, {'Content-type': 'text/html'});
 
         const cardsHtml = dataObj.map(el => replaceTemplate(tempCard, el)).join('');
-        const output = tempOverview.replace('{%PRODUCT_CARD%}', cardsHtml);
+        const output = tempOverview.replace('{%RECIPE_CARD%}', cardsHtml);
+        console.log(output);
         res.end(output);
     
     // Product 
-    } else if (pathname === '/product') {
+    } else if (pathname === '/recipe') {
         res.writeHead(200, {'Content-type': 'text/html'});
-        const product = dataObj[query.id];
-        const output = replaceTemplate(tempProduct, product);
+        const recipe = dataObj[query.id];
+        const output = replaceTemplate(tempRecipe, recipe);
 
         res.end(output);
     

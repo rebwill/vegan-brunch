@@ -3,7 +3,7 @@
     "id": 0,
     "name": "Vegan French Toast",
     "image": "https://minimalistbaker.com/wp-content/uploads/2014/03/Vegan-French-Toast-Simple-healthy-and-surprisingly-similar-to-traditional-french-toast.jpg",
-    "recipe": "https://minimalistbaker.com/basic-vegan-french-toast/",
+    "recipeLink": "https://minimalistbaker.com/basic-vegan-french-toast/",
     "emoji": "🍞",
     "ingredients": [
       "maple syrup",
@@ -20,7 +20,7 @@
     "id": 1,
     "name": "Coconut whipped cream",
     "image": "https://minimalistbaker.com/wp-content/uploads/2014/10/How-to-Make-Coconut-Whipped-Cream.jpg",
-    "recipe": "https://minimalistbaker.com/how-to-make-coconut-whipped-cream/",
+    "recipeLink": "https://minimalistbaker.com/how-to-make-coconut-whipped-cream/",
     "emoji": "🥥",
     "ingredients": [
       "coconut milk",
@@ -34,7 +34,7 @@
     "id": 2,
     "name": "Avocado toast",
     "image": "https://cookieandkate.com/images/2012/04/avocado-toast-recipe-3-550x824.jpg",
-    "recipe": "https://cookieandkate.com/avocado-toast-recipe/",
+    "recipeLink": "https://cookieandkate.com/avocado-toast-recipe/",
     "emoji": "🥑",
     "ingredients": [
       "bread",
@@ -52,7 +52,7 @@
     "id": 3,
     "name": "Piña Colada Smoothie",
     "image": "https://www.modernhoney.com/wp-content/uploads/2018/03/Pina-Colada-Smoothie-2.jpg",
-    "recipe": "https://www.modernhoney.com/pina-colada-smoothie/6",
+    "recipeLink": "https://www.modernhoney.com/pina-colada-smoothie/6",
     "emoji": "🍍",
     "ingredients": [
       "pineapple",
@@ -66,7 +66,7 @@
     "id": 4,
     "name": "Orange, Carrot, and Ginger Juice",
     "image": "https://cupfulofkale.com/wp-content/uploads/2019/01/Carrot-Orange-and-Ginger-Juice.jpeg",
-    "recipe": "https://cupfulofkale.com/immune-boosting-orange-carrot-ginger-juice/",
+    "recipeLink": "https://cupfulofkale.com/immune-boosting-orange-carrot-ginger-juice/",
     "emoji": "🥕",
     "ingredients": [
       "orange",
@@ -80,7 +80,7 @@
     "id": 5,
     "name": "Vegan Pancakes",
     "image": "https://cookieandkate.com/images/2015/03/vegan-pancake-recipe-2-550x757.jpg",
-    "recipe": "https://cookieandkate.com/simple-vegan-pancake-recipe/",
+    "recipeLink": "https://cookieandkate.com/simple-vegan-pancake-recipe/",
     "emoji": "🥞",
     "ingredients": [
       "flour",
@@ -98,7 +98,7 @@
     "id": 6,
     "name": "Vegan Cinnamon Rolls",
     "image": "http://www.wifemamafoodie.com/wp-content/uploads/2018/01/Cinnamon-Rolls-frosted-1-Vegan-and-refined-sugar-free.jpg",
-    "recipe": "https://itdoesnttastelikechicken.com/easy-vegan-cinnamon-buns/",
+    "recipeLink": "https://itdoesnttastelikechicken.com/easy-vegan-cinnamon-buns/",
     "emoji": "🥮",
     "ingredients": [
       "flour",
@@ -118,7 +118,7 @@
     "id": 7,
     "name": "Roasted Bell Pepper and Asparagus Tofu Frittata",
     "image": "http://assets.wholefoodsmarket.com/recipes/3376/2048/1536/3376-5.jpg",
-    "recipe": "https://www.wholefoodsmarket.com/recipes/roasted-bell-pepper-and-asparagus-tofu-frittata",
+    "recipeLink": "https://www.wholefoodsmarket.com/recipes/roasted-bell-pepper-and-asparagus-tofu-frittata",
     "emoji": "🥘",
     "ingredients": [
       "tofu",
@@ -141,7 +141,7 @@
     "id": 8,
     "name": "Silken Tofu Chocolate Mousse",
     "image": "https://aseasyasapplepie.com/wp-content/uploads/2017/03/silken-tofu-chooclate-mousse-2.jpg",
-    "recipe": "https://aseasyasapplepie.com/silken-tofu-chocolate-mousse/",
+    "recipeLink": "https://aseasyasapplepie.com/silken-tofu-chocolate-mousse/",
     "emoji": "🍨",
     "ingredients": [
       "tofu",

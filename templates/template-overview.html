@@ -12,7 +12,7 @@
     />
 
 
-    <title>Vegan Brunch Recipe Inspo</title>
+    <title>Vegan Brunch Society</title>
 
     <style>
       body {
@@ -86,6 +86,7 @@
         font-family: 'Solway', serif;
         font-size: 25px;
         font-weight: 500;
+        text-transform: capitalize;
       }
       .card-text {
         font-family: 'Roboto', sans-serif;
@@ -105,10 +106,14 @@
       <div class="intro-section">
         <h1>Vegan Brunch<br>Society<br>🥞🍓🥑</h1>
         <h2>We're over spending $50 on mediocre hollandaise sauce and toast.<br><br><strong>We're making brunch at home, and we're making it vegan.</strong></h3>
-        </div>
+      </div>
+      <div class="card-columns">
+        {%RECIPE_CARD%}
+      </div>
+      
 
 <!-- BOOTSTRAP MASONRY CARDS -->
-      <div class="cards-container">
+      <!-- <div class="cards-container">
           <div class="card-columns">
               <div class="card recipe-card">
                 <img class="card-img-top" src="https://minimalistbaker.com/wp-content/uploads/2014/03/Vegan-French-Toast-Simple-healthy-and-surprisingly-similar-to-traditional-french-toast.jpg" alt="...">
@@ -160,7 +165,7 @@
                 </div>
     
             </div>
-      </div>
+      </div> -->
     </div>
   </body>
 </html>

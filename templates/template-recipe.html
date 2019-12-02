@@ -11,7 +11,7 @@
       href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/155/ear-of-maize_1f33d.png"
     />
 
-    <title>{%PRODUCTNAME%} {%IMAGE%} /// NODE FARM</title>
+    <title>{%NAME%} {%EMOJI%} // Vegan Brunch Society</title>
 
     <style>
       *,
@@ -84,7 +84,7 @@
         /* position: relative; */
         height: 400px;
         /* overflow: hidden; */
-        background-image: url("https://minimalistbaker.com/wp-content/uploads/2014/03/Vegan-French-Toast-Simple-healthy-and-surprisingly-similar-to-traditional-french-toast.jpg");
+        background-image: url("{%IMAGE%}");
         object-fit: cover;
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
@@ -219,12 +219,10 @@
         <a href="/overview" class="product__back">
           <span class="emoji-left">👈</span>Back
         </a>
-        <div class="product__hero">
-          <!-- <img  src="https://minimalistbaker.com/wp-content/uploads/2014/03/Vegan-French-Toast-Simple-healthy-and-surprisingly-similar-to-traditional-french-toast.jpg"/> -->
-        </div>
-        <h2 class="product__name">Vegan French Toast</h2>
+        <div class="product__hero"></div>
+        <h2 class="product__name">{%NAME%}</h2>
         <p class="product__description">
-            You might be asking yourself how an eggy classic like French toast can be vegan. Well thanks to the miracle of gooey soaked chia seeds and hot oil on a griddle, we can have our French toast and not eat eggs too. Get the toasting right and you'll be pleasantly surprised by the moist middle and crispy outside.
+            {%LONGDESC%}
         </p>
         <div class="product__details">
           <h4 class="ingredients-title">Ingredients</h4>
@@ -237,10 +235,10 @@
             <li>vanilla extract</li>
           </ul>
         </div>
-        <a href="https://minimalistbaker.com/basic-vegan-french-toast/" class="product__link">
-          <span class="emoji-left">🥞</span>
+        <a href="{%RECIPELINK%}" class="product__link">
+          <span class="emoji-left">{%EMOJI%}</span>
           <span>Get the recipe </span>
-          <span class="emoji-left">&nbsp 🥞</span>
+          <span class="emoji-left">&nbsp {%EMOJI%}</span>
         </a>
   
       </figure>
