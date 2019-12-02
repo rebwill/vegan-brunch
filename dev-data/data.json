@@ -1,9 +1,10 @@
 [
   {
     "id": 0,
-    "recipeName": "Vegan French Toast",
+    "name": "Vegan French Toast",
     "image": "https://minimalistbaker.com/wp-content/uploads/2014/03/Vegan-French-Toast-Simple-healthy-and-surprisingly-similar-to-traditional-french-toast.jpg",
-    "recipeLink": "https://minimalistbaker.com/basic-vegan-french-toast/",
+    "recipe": "https://minimalistbaker.com/basic-vegan-french-toast/",
+    "emoji": "🍞",
     "ingredients": [
       "maple syrup",
       "chia seeds",
@@ -12,25 +13,29 @@
       "vanilla extract",
       "bread"
     ],
-    "description": "You might be asking yourself how an eggy classic like French toast can be vegan. Well thanks to the miracle of gooey soaked chia seeds and hot oil on a griddle, we can have our French toast and not eat eggs too. Get the toasting right and you'll be pleasantly surprised by the moist middle and crispy outside."
+    "shortDescription": "Moist on the inside, toasty on the outside. We give thanks to the gelatinous magic of chia seeds.",
+    "longDescription": "You might be asking yourself how an eggy classic like French toast can be vegan. Well thanks to the miracle of gooey soaked chia seeds and hot oil on a griddle, we can have our French toast and not eat eggs too. Get the toasting right and you'll be pleasantly surprised by the moist middle and crispy outside."
   },
   {
     "id": 1,
-    "recipeName": "Coconut whipped cream",
+    "name": "Coconut whipped cream",
     "image": "https://minimalistbaker.com/wp-content/uploads/2014/10/How-to-Make-Coconut-Whipped-Cream.jpg",
-    "recipeLink": "https://minimalistbaker.com/how-to-make-coconut-whipped-cream/",
+    "recipe": "https://minimalistbaker.com/how-to-make-coconut-whipped-cream/",
+    "emoji": "🥥",
     "ingredients": [
       "coconut milk",
       "powdered sugar",
       "vanilla extract"
     ],
-    "description": "We recommend bringing this heavenly cream to your most vegan-hating family gatherings and soaking in the ooh's and ahh's from your uncle with the cholesterol-hardened arteries before announcing that it is a 100% card-carrying vegan recipe. The best part is that it's incredibly easy to make — if you don't have a mixer, you can just use a whisk. If you don't have a whisk, you can use a fork. If you don't have a fork, maybe work on solving that first. You have bigger problems."
+    "shortDescription": "Many vegan and non-vegan minds have been permanently blown by this cream. Use with caution (or just eat with wild abandon; that works too).",
+    "longDescription": "We recommend bringing this heavenly cream to your most vegan-hating family gatherings and soaking in the ooh's and ahh's from your uncle with the cholesterol-hardened arteries before announcing that it is a 100% card-carrying vegan recipe. The best part is that it's incredibly easy to make — if you don't have a mixer, you can just use a whisk. If you don't have a whisk, you can use a fork. If you don't have a fork, maybe work on solving that first. You have bigger problems."
   },
   {
     "id": 2,
-    "recipeName": "Avocado toast",
+    "name": "Avocado toast",
     "image": "https://cookieandkate.com/images/2012/04/avocado-toast-recipe-3-550x824.jpg",
-    "recipeLink": "https://cookieandkate.com/avocado-toast-recipe/",
+    "recipe": "https://cookieandkate.com/avocado-toast-recipe/",
+    "emoji": "🥑",
     "ingredients": [
       "bread",
       "avocado",
@@ -40,37 +45,43 @@
       "basil",
       "balsamic vinegar"
     ],
-    "description": "Trust us, avocado toast is NOT the reason you can't afford to buy a home. So come get some healthy fats and put whatever the hell you want on it. Realistically, almost anything is good with sea salt liberally sprinkled on it, and the combinations are basically endless. Get creative!"
+    "shortDescription": "You don't have to pay $18 for this. And I promise it will be equally decadent.",
+    "longDescription": "Trust us, avocado toast is NOT the reason you can't afford to buy a home. So come get some healthy fats and put whatever the hell you want on it. Realistically, almost anything is good with sea salt liberally sprinkled on it, and the combinations are basically endless. Get creative!"
   },
   {
     "id": 3,
-    "recipeName": "Piña Colada Smoothie",
+    "name": "Piña Colada Smoothie",
     "image": "https://www.modernhoney.com/wp-content/uploads/2018/03/Pina-Colada-Smoothie-2.jpg",
-    "recipeLink": "https://www.modernhoney.com/pina-colada-smoothie/6",
+    "recipe": "https://www.modernhoney.com/pina-colada-smoothie/6",
+    "emoji": "🍍",
     "ingredients": [
       "pineapple",
       "coconut milk",
       "banana"
     ],
-    "description": "I'll address the elephant in the room first: you can make this with or without alcohol depending on what kind of brunch you're trying to have. But in either case, this is going to be over 9,000 times more delicious than any piña colada mix you've ever encountered."
+    "shortDescription": "Three simple ingredients. Infinite creaminess and deliciousness.",
+    "longDescription": "I'll address the elephant in the room first: you can make this with or without alcohol depending on what kind of brunch you're trying to have. But in either case, this is going to be over 9,000 times more delicious than any piña colada mix you've ever encountered."
   },
   {
     "id": 4,
-    "recipeName": "Orange, Carrot, and Ginger Juice",
+    "name": "Orange, Carrot, and Ginger Juice",
     "image": "https://cupfulofkale.com/wp-content/uploads/2019/01/Carrot-Orange-and-Ginger-Juice.jpeg",
-    "recipeLink": "https://cupfulofkale.com/immune-boosting-orange-carrot-ginger-juice/",
+    "recipe": "https://cupfulofkale.com/immune-boosting-orange-carrot-ginger-juice/",
+    "emoji": "🥕",
     "ingredients": [
       "orange",
       "carrot",
       "ginger"
     ],
-    "description": "Come get yo' spicy, immune-boosting life. Orange, carrot, and ginger juice is here to cleanse and delight your whole body. Fresh, citrusy, and slightly spicy depending on how brave you are when it comes to fresh ginger, OCGJ will cool you down in the summer, warm you up in the winter, and blast you with vitamins year-round."
+    "shortDescription": "You don't need to do a full juice cleanse to reap the spicy benefits of this zingy nectar.",
+    "longDescription": "Come get yo' spicy, immune-boosting life. Orange, carrot, and ginger juice is here to cleanse and delight your whole body. Fresh, citrusy, and slightly spicy depending on how brave you are when it comes to fresh ginger, OCGJ will cool you down in the summer, warm you up in the winter, and blast you with vitamins year-round."
   },
   {
     "id": 5,
-    "recipeName": "Vegan Pancakes",
+    "name": "Vegan Pancakes",
     "image": "https://cookieandkate.com/images/2015/03/vegan-pancake-recipe-2-550x757.jpg",
-    "recipeLink": "https://cookieandkate.com/simple-vegan-pancake-recipe/",
+    "recipe": "https://cookieandkate.com/simple-vegan-pancake-recipe/",
+    "emoji": "🥞",
     "ingredients": [
       "flour",
       "baking powder",
@@ -80,13 +91,15 @@
       "vanilla extract",
       "salt"
     ],
-    "description": "Pancakes without eggs? Your grandma might think it's blasphemy but trust me, you won't know the difference and neither will anyone else. Nice 'n' fluffy, slightly sweet, and golden brown, these f l a t  b o i s will please everyone — even the ones who wish you made bacon (but you didn't, because this is vegan brunch)."
+    "shortDescription": "A breakfast classic, without the animal products. Prepare the syrup, coconut whipped cream, and fruits.",
+    "longDescription": "Pancakes without eggs? Your grandma might think it's blasphemy but trust me, you won't know the difference and neither will anyone else. Nice 'n' fluffy, slightly sweet, and golden brown, these f l a t  b o i s will please everyone — even the ones who wish you made bacon (but you didn't, because this is vegan brunch)."
   },
   {
     "id": 6,
-    "recipeName": "Vegan Cinnamon Rolls",
+    "name": "Vegan Cinnamon Rolls",
     "image": "http://www.wifemamafoodie.com/wp-content/uploads/2018/01/Cinnamon-Rolls-frosted-1-Vegan-and-refined-sugar-free.jpg",
-    "recipeLink": "https://itdoesnttastelikechicken.com/easy-vegan-cinnamon-buns/",
+    "recipe": "https://itdoesnttastelikechicken.com/easy-vegan-cinnamon-buns/",
+    "emoji": "🥮",
     "ingredients": [
       "flour",
       "baking powder",
@@ -98,13 +111,15 @@
       "powdered sugar",
       "vanilla extract"
     ],
-    "description": "Pancakes without eggs? Your grandma might think it's blasphemy but trust me, you won't know the difference and neither will anyone else. Nice 'n' fluffy, slightly sweet, and golden brown, these f l a t  b o i s will please everyone — even the ones who wish you made bacon (but you didn't, because this is vegan brunch)."
+    "shortDescription": "Prepare your body. Soft, buttery, moist cinnamon rolls are incoming.",
+    "longDescription": "Cinnamon, sugar, and (vegan) butter create the same masterpiece they always do with these vegan cinnamon rolls. Have some with your coffee during morning brunch, and then continue to eat them throughout the day as snacks. We won't tell if you also eat them for dinner."
   },
   {
     "id": 7,
-    "recipeName": "Roasted Bell Pepper and Asparagus Tofu Frittata",
+    "name": "Roasted Bell Pepper and Asparagus Tofu Frittata",
     "image": "http://assets.wholefoodsmarket.com/recipes/3376/2048/1536/3376-5.jpg",
-    "recipeLink": "https://www.wholefoodsmarket.com/recipes/roasted-bell-pepper-and-asparagus-tofu-frittata",
+    "recipe": "https://www.wholefoodsmarket.com/recipes/roasted-bell-pepper-and-asparagus-tofu-frittata",
+    "emoji": "🥘",
     "ingredients": [
       "tofu",
       "coconut milk",
@@ -119,18 +134,21 @@
       "kalamata olives",
       "fresh basil"
     ],
-    "description": "We're not usually in the business of using processed 'egg alternatives', but we're not opposed to getting creative with a little tofu every once in a while. Sometimes you just really need a good protein and veggies dish at brunch, and this vegan frittata is here to do that job. The key? Nutritional yeast for that savory, cheesy, nutty flavor, but without dairy or eggs!"
+    "shortDescription": "For the staunch protein lovers attending your brunch, there's savory tofu fritatta.",
+    "longDescription": "We're not usually in the business of using processed 'egg alternatives', but we're not opposed to getting creative with a little tofu every once in a while. Sometimes you just really need a good protein and veggies dish at brunch, and this vegan frittata is here to do that job. The key? Nutritional yeast for that savory, cheesy, nutty flavor, but without dairy or eggs!"
   },
   {
     "id": 8,
-    "recipeName": "Silken Tofu Chocolate Mousse",
+    "name": "Silken Tofu Chocolate Mousse",
     "image": "https://aseasyasapplepie.com/wp-content/uploads/2017/03/silken-tofu-chooclate-mousse-2.jpg",
-    "recipeLink": "https://aseasyasapplepie.com/silken-tofu-chocolate-mousse/",
+    "recipe": "https://aseasyasapplepie.com/silken-tofu-chocolate-mousse/",
+    "emoji": "🍨",
     "ingredients": [
       "tofu",
       "maple syrup",
       "dark chocolate"
     ],
-    "description": "Ok, I know. You're feeling VERY skeptical of using tofu in dessert — I was too. But hear me out. Tofu's whole thing is that it takes the flavor of whatever you cook/mix it with. The key to this dessert is to let it sit overnight and let the tofu really marinate in the chocolateyness. You will not believe what is going to happen in your mouth after that. Pro tip: put it on pancakes with strawberries or raspberries. If you really want to blow your guests' minds and send them into an actual medical sugar coma, combine with coconut whipped cream. Caution: this might be illegal?"
+    "shortDescription": "Before you sit down to eat, we recommend preparing everyone emotionally for this rich, chocolatey, vegan mousse.",
+    "longDescription": "Ok, I know. You're feeling VERY skeptical of using tofu in dessert — I was too. But hear me out. Tofu's whole thing is that it takes the flavor of whatever you cook/mix it with. The key to this dessert is to let it sit overnight and let the tofu really marinate in the chocolateyness. You will not believe what is going to happen in your mouth after that. Pro tip: put it on pancakes with strawberries or raspberries. If you really want to blow your guests' minds and send them into an actual medical sugar coma, combine with coconut whipped cream. Caution: this might be illegal?"
   }
 ]
