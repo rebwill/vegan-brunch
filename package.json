@@ -1,0 +1,23 @@
+{
+  "name": "vegan-brunch-node",
+  "version": "1.0.0",
+  "description": "Recipes for past and future vegan brunches.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rebwill/vegan-brunch.git"
+  },
+  "keywords": [],
+  "author": "Rebecca Willett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rebwill/vegan-brunch/issues"
+  },
+  "homepage": "https://github.com/rebwill/vegan-brunch#readme",
+  "engines": {
+    "node": "10.16.3"
+  }
+}
