@@ -89,8 +89,6 @@ const server = http.createServer((req, res) => {       // each time a new reques
         });
         res.end("<h1>This page could not be found.</h1>");
     }
-})
-
-server.listen(PORT, '127.0.0.1', () => {
+}).listen(PORT, () => {
     console.log("Listening to requests on port 8000");
 });
