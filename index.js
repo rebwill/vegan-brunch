@@ -3,6 +3,9 @@ const fs = require('fs');
 const http = require('http');
 const url = require('url');
 
+
+// Dynamic Port for Heroku
+const PORT = process.env.PORT || 3000;
 // Then our own modules
 const replaceTemplate = require('./modules/replaceTemplate'); // we are saving this into a variable to use in this module.
 
@@ -88,6 +91,6 @@ const server = http.createServer((req, res) => {       // each time a new reques
     }
 })
 
-server.listen(8000, '127.0.0.1', () => {
+server.listen(PORT, '127.0.0.1', () => {
     console.log("Listening to requests on port 8000");
 });
