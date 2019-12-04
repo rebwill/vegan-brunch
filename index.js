@@ -51,6 +51,8 @@ const replaceTemplate = require('./modules/replaceTemplate'); // we are saving t
 const tempOverview = fs.readFileSync(`${__dirname}/templates/template-overview.html`, 'utf-8');
 const tempCard = fs.readFileSync(`${__dirname}/templates/template-card.html`, 'utf-8');
 const tempRecipe = fs.readFileSync(`${__dirname}/templates/template-recipe.html`, 'utf-8');
+const aboutBrunch = fs.readFileSync(`${__dirname}/templates/aboutBrunch.html`, 'utf-8');
+const aboutSite = fs.readFileSync(`${__dirname}/templates/aboutSite.html`, 'utf-8');
 
 const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
 const dataObj = JSON.parse(data);
@@ -77,6 +79,16 @@ const server = http.createServer((req, res) => {       // each time a new reques
 
         res.end(output);
     
+    // About Brunch
+    } else if (pathname === '/about-vegan-brunch') {
+        res.writeHead(200, {'Content-type': 'text/html'});
+        res.end(aboutBrunch);
+
+    // About Site
+    } else if (pathname === '/about-the-site') {
+        res.writeHead(200, {'Content-type': 'text/html'});
+        res.end(aboutSite);
+
     // API 
     } else if (pathname === '/api') {
         res.writeHead(200, {'Content-type': 'application/json'});

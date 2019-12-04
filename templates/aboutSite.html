@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900|Solway:400,500,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d81849d7b2.js" crossorigin="anonymous"></script>
 
-    <title>{%EMOJI%} {%NAME%} // Vegan Brunch Society</title>
+    <title>🥑 About Vegan Brunch Society</title>
 
     <style>
       *,
@@ -58,20 +58,6 @@
         font-size: 55px;
         padding-top: 0;
       }
-
-      /* h1::before {
-        content: '';
-        display: block;
-        height: 65%;
-        width: 49%;
-        position: absolute;
-        top: 105%;
-        left: 50%;
-        background: linear-gradient(to bottom, #9be15d, #00e3ae);
-        opacity: 0.8;
-        z-index: -1;
-        transform: skewY(370deg) translate(-50%, -50%);
-      } */
       
       h4 {
         font-family: 'Roboto', sans-serif;
@@ -99,26 +85,12 @@
         /* position: relative; */
         height: 400px;
         /* overflow: hidden; */
-        background-image: url("{%IMAGE%}");
+        background-image: url("https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         background-position: center;
         background-size: cover;
       }
-
-      /* .product__hero::before {
-        content: '';
-        display: block;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("https://minimalistbaker.com/wp-content/uploads/2014/03/Vegan-French-Toast-Simple-healthy-and-surprisingly-similar-to-traditional-french-toast.jpg");
-        object-fit: cover;
-        /* opacity: 0.5; */
-        /* z-index: 100;
-      } */
 
       .product__back:link,
       .product__back:visited {
@@ -154,33 +126,29 @@
         color: black;
         text-align: center;
         font-size: 45px;
-        /* word-spacing: 2px; */
-        /* transform: scale(1.07) skewX(-20deg);
-        box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s; */
       }
 
       .product__details {
         background-color: #eee;
         padding: 4rem 6rem;
-        font-size: 1.9rem;
-        display: grid;
+        font-size: 1.6rem;
+        display: block;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1.5rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
       }
 
       .ingredients-title {
         font-family: 'Solway', serif;
         font-weight: 500;
+        padding-right: 30px;
+        margin-bottom: 15px;
       }
 
-      .ingredients-list {
+      /* .ingredients-list {
         list-style-type: circle;
-      } 
+      }  */
 
       .product__description {
         padding: 0rem 6rem 2rem 6rem;
@@ -224,6 +192,22 @@
         font-size: 2rem;
         margin-right: 1rem;
       }
+
+      .technical-section {
+        padding: 4rem 6rem;
+      }
+
+      .technical-info {
+        font-size: 1.6rem;
+        line-height: 1.8;
+      }
+      .code-snippet {
+        font-family: monospace;
+        color: #f03750;
+        font-weight: 500;
+        font-size: 1.8rem;
+        background-color: rgb(233, 231, 231);
+      }
     </style>
   </head>
 
@@ -239,26 +223,28 @@
           <span class="emoji-left">🏠</span>Home
         </a>
         <div class="product__hero"></div>
-        <h2 class="product__name">{%NAME%}</h2>
+        <h2 class="product__name">About this Site</h2>
         <p class="product__description">
-            {%LONGDESC%}
+            Ah, so you were nerdy enough to get this far. Thanks. I appreciate you.
+            <br><br>
+            I created this little Node.js app as a mini-project based off of the very first module of <a href="https://twitter.com/jonasschmedtman">Jonas Schmedtmann's</a> Udemy course, "Node.js, Express, MongoDB & More: The Complete Bootcamp 2020". It's deployed on Heroku.
+            <br><br>
+            The information of all the recipes lives in a JSON file, which is used to dynamically create both the recipe cards on the home page (through a <span class="code-snippet">map</span> function), and the individual recipe pages (by parsing the recipe ID from the URL). Both then use a <span class="code-snippet">replace</span> function to insert the information from the relevant recipe into HTML templates for each page.
+            <br><br>
+            It's been a great exercise in learning Node.js, and best of all I have a place to store my vegan brunch recipes now :D
+            <br><br>
+            <strong>Future Features:</strong>
+            <br><br>
+            - Search feature to search recipes by ingredients.
+            <br>
+            - Mark which recipes I have already made.
         </p>
         <div class="product__details">
-          <h4 class="ingredients-title">Ingredients</h4>
-          <ul class="ingredients-list">
-            <li>maple syrup</li>
-            <li>chia seeds</li>
-            <li>almond milk</li>
-            <li>bread</li>
-            <li>cinnamon</li>
-            <li>vanilla extract</li>
-          </ul>
+          
+          <strong>Ask me stuff. Or say hello.</strong>
+          <br>
+          Find me on Twitter at <a href="https://twitter.com/rebeccaawillett">@rebeccaAwillett</a>.
         </div>
-        <a href="{%RECIPELINK%}" class="product__link">
-          <span class="emoji-left">{%EMOJI%}</span>
-          <span>Get the recipe </span>
-          <span class="emoji-left">&nbsp {%EMOJI%}</span>
-        </a>
   
       </figure>
       

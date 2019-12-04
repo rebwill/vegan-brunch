@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,900|Solway:400,500,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/d81849d7b2.js" crossorigin="anonymous"></script>
 
-    <title>{%EMOJI%} {%NAME%} // Vegan Brunch Society</title>
+    <title>🥑 About Vegan Brunch Society</title>
 
     <style>
       *,
@@ -58,20 +58,6 @@
         font-size: 55px;
         padding-top: 0;
       }
-
-      /* h1::before {
-        content: '';
-        display: block;
-        height: 65%;
-        width: 49%;
-        position: absolute;
-        top: 105%;
-        left: 50%;
-        background: linear-gradient(to bottom, #9be15d, #00e3ae);
-        opacity: 0.8;
-        z-index: -1;
-        transform: skewY(370deg) translate(-50%, -50%);
-      } */
       
       h4 {
         font-family: 'Roboto', sans-serif;
@@ -99,26 +85,12 @@
         /* position: relative; */
         height: 400px;
         /* overflow: hidden; */
-        background-image: url("{%IMAGE%}");
+        background-image: url("https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         background-position: center;
         background-size: cover;
       }
-
-      /* .product__hero::before {
-        content: '';
-        display: block;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("https://minimalistbaker.com/wp-content/uploads/2014/03/Vegan-French-Toast-Simple-healthy-and-surprisingly-similar-to-traditional-french-toast.jpg");
-        object-fit: cover;
-        /* opacity: 0.5; */
-        /* z-index: 100;
-      } */
 
       .product__back:link,
       .product__back:visited {
@@ -154,33 +126,29 @@
         color: black;
         text-align: center;
         font-size: 45px;
-        /* word-spacing: 2px; */
-        /* transform: scale(1.07) skewX(-20deg);
-        box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s; */
       }
 
       .product__details {
         background-color: #eee;
         padding: 4rem 6rem;
-        font-size: 1.9rem;
-        display: grid;
+        font-size: 1.6rem;
+        display: block;
         grid-template-columns: 1fr 1fr;
         grid-gap: 1.5rem;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
       }
 
       .ingredients-title {
         font-family: 'Solway', serif;
         font-weight: 500;
+        padding-right: 30px;
+        margin-bottom: 15px;
       }
 
-      .ingredients-list {
+      /* .ingredients-list {
         list-style-type: circle;
-      } 
+      }  */
 
       .product__description {
         padding: 0rem 6rem 2rem 6rem;
@@ -224,6 +192,22 @@
         font-size: 2rem;
         margin-right: 1rem;
       }
+
+      .technical-section {
+        padding: 4rem 6rem;
+      }
+
+      .technical-info {
+        font-size: 1.6rem;
+        line-height: 1.8;
+      }
+      .code-snippet {
+        font-family: monospace;
+        color: #f03750;
+        font-weight: 500;
+        font-size: 1.8rem;
+        background-color: rgb(233, 231, 231);
+      }
     </style>
   </head>
 
@@ -239,26 +223,43 @@
           <span class="emoji-left">🏠</span>Home
         </a>
         <div class="product__hero"></div>
-        <h2 class="product__name">{%NAME%}</h2>
+        <h2 class="product__name">Origins of Vegan Brunch</h2>
         <p class="product__description">
-            {%LONGDESC%}
+            Once upon a time, some friends went out for breakfast. They ate mediocre food, at a mediocre cafe, and had a great time.
+            <br><br>
+            They loved spending time together over a warm meal, but it occurred to them that they arguably could have made better food at home, and spent way less money.
+            <br><br>
+            An idea was born: what if we just gathered at someone's house on a Sunday morning; everyone brings a few ingredients; and we spend the morning cooking, eating, and laughing together — all while spending very little money?
+            <br><br>
+            So they did just that.
+            <br><br>
+            At the first brunch, three friends gathered. One friend was vegan and the other two were 100% vegan-friendly. So they made all the food vegan.
+            <br><br>
+            Everything was so decadent and delicious that the friends decided to continue making each of the monthly meals vegan — in part to share with their non-vegan friends how delicious plant-based food can be, and prove that it's not all carrots and lettuce!
+            <br><br>
+            Thus, a monthly tradition was born — and continues to grow.
+            <br><br>
+            <strong>In a time and a place where social gatherings tend to happen out of the home (we are all millennials living in tiny apartments in Miami), we delight in bringing back the intimacy, bonding, and coziness of hanging out at home, combined with the teamwork of cooking a decadent breakfast together!</strong>
+            <br><br>
         </p>
         <div class="product__details">
-          <h4 class="ingredients-title">Ingredients</h4>
-          <ul class="ingredients-list">
-            <li>maple syrup</li>
-            <li>chia seeds</li>
-            <li>almond milk</li>
-            <li>bread</li>
-            <li>cinnamon</li>
-            <li>vanilla extract</li>
+          <h4 class="ingredients-title">Want to host your own vegan brunch?</h4>
+          <p><strong>Here's how to make it happen:</strong></p>
+          <ol class="ingredients-list">
+            <li><strong>Choose the place.</strong> We like to rotate between different friends' apartments!</li>
+            <li><strong>Assemble your guest list.</strong> Send out that calendar invite.</li>
+            <li><strong>Create your menu.</strong> We like to do one sweet dish, one savory dish, and a juice or smoothie. But totally follow your heart on this — or your stomach. Googling "vegan brunch recipes" is a good place to start — or, of course, just check out our recipes here 😊</li>
+            <li><strong>Divide up ingredient assignments.</strong> We take the financial mission of Vegan Brunch very seriously and make a cost estimate for each of the ingredients involved. Then, as we assign them to diferent people to bring on the big day, we make careful calculations to ensure that everyone is spending roughly the same amount. Yes, as you probably guessed, we really love spreadsheets and are very nerdy about this. Be as extra (or not) as you need to be.</li>
+            <li><strong>Send out assignments by Friday or Saturday.</strong> We usually host our brunches on Sunday mornings as it's the easiest time to book everyone. Make sure you give folks enough lead time so you're not stuck without ingredients (or have key items arriving hours late *MIAMI TIME? WHAT'S THAT?*)</li>
+            <li><strong>Gather, assign cooking tasks, and let the games begin!</strong> But before you start anything, it's highly recommended to make coffee.</li>
+            <li><strong>'Gram. That. Shit.</strong> We DID mention that we are millennials 🤷 But seriously, the food comes out so beautiful that it's hard to resist. Plus, the bonus of sharing pics is that you'll get more friends interested in coming to your next Vegan Brunch!</li>
+            <li><strong>EAT.</strong> Enjoy the sweet, sweet fruits of your collective labor, whether you are sitting at a proper dining room table, the floor, or beach chairs in the house (all have happened).</li>
           </ul>
+          <br>
+          <strong>Ask me stuff. Or say hello.</strong>
+          <br>
+          Find me on Twitter at <a href="https://twitter.com/rebeccaawillett">@rebeccaAwillett</a>.
         </div>
-        <a href="{%RECIPELINK%}" class="product__link">
-          <span class="emoji-left">{%EMOJI%}</span>
-          <span>Get the recipe </span>
-          <span class="emoji-left">&nbsp {%EMOJI%}</span>
-        </a>
   
       </figure>
       

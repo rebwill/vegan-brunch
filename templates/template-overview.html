@@ -10,18 +10,32 @@
       rel="icon"
       href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/232/avocado_1f951.png"
     />
+    <script src="https://kit.fontawesome.com/d81849d7b2.js" crossorigin="anonymous"></script>
 
 
     <title>Vegan Brunch Society</title>
 
     <style>
       body {
-        background: linear-gradient(to bottom right, white, #f7f7a8);
+        background: linear-gradient(to bottom right, white, rgb(245, 210, 97));
         background-repeat: no-repeat;
         height: 100%;
-        padding: 5vw;
         background-repeat: no-repeat;
         background-attachment: fixed;
+        color: black;
+      }
+      .title-section {
+        width: 100%;
+        height: auto;
+        box-sizing: content-box;
+        padding: .75rem;
+        position: relative;
+        background-color: transparent;
+        color: black;
+        font-size: 11px;
+        letter-spacing: 0.2em;
+        text-align: center;
+        text-shadow: 1.2px 1.2px rgba(240, 55, 80, 0.7);
       }
       .intro-section {
         margin-bottom: 60px;
@@ -29,28 +43,61 @@
       h1 {
         font-family: 'Solway', serif;
         text-align: center;
-        font-size: 70px;
+        font-size: 55px;
         padding-top: 0;
       }
       h2 {
         font-family: 'Roboto', sans-serif;
         text-align: center;
-        font-size: 30px;
+        font-size: 1.75rem;
         font-weight: 400;
       }
       h3 {
         font-family: 'Solway', serif;
         text-align: left;
         font-size: 30px;
-        /* padding-top: 0; */
       }
-      /* .cards-container {
-        display: flex;
-        flex-wrap: wrap;
-        padding-top: 20px;
-        height: calc(100% + 500px);
-        overflow: visible;
-      } */
+      .fa-bread-slice {
+        color: white;
+      }
+      #slogan {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+      }
+
+      .button-container {
+        text-align: center;
+      }
+
+      #learn-more-button {
+        background-color: white;
+        color: #f03750;
+        border-radius: 15px;
+        font-size: 1.5rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: inline;
+        font-family: 'Solway', serif;
+        font-weight: 500;
+        box-shadow: 1px 4px 10px black;
+        width: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+      }
+      #learn-more-button:hover {
+        /* transform: scale(1.05, 1.05); */
+        transition: all 0.1s;
+        box-shadow: 0px 1px 5px black;
+        transform: translateY(2px);
+      }
+      #our-recipes-title {
+        font-family: 'Solway', serif;
+        text-align: left;
+        font-size: 35px;
+        padding-left: 20px;
+        font-weight: 500;
+      }
       .card-columns {
         overflow: visible;
         padding: 20px;
@@ -60,18 +107,21 @@
       }
       .card {
         border-radius: 40px;
-        box-shadow: 20px 20px 50px black;
+        box-shadow: 10px 10px 25px black;
         margin-left: 40px;
         margin-right: 40px;
         margin-bottom: 40px;
       }
       .card:hover {
-        transform: scale(1.1, 1.1);
+        transform: scale(1.05, 1.05);
         transition: all 0.3s;
         z-index: 1050;
       }
       #recipe-card {
-        margin: 15px;
+        margin-right: 30px;
+        margin-left: 0;
+        margin-bottom: 30px;
+        margin-top: 0;
       }
       .card-img-top {
         height: 300px;
@@ -102,70 +152,38 @@
   </head>
 
   <body>
+
+    <div class="title-section">
+      <h1>Vegan Brunch<br>
+      Society <i class="fas fa-mug-hot"></i></h1>
+    </div>
+
+    <div class="intro-section">
+        <h2 id="slogan">Eating in is the new eating out.<br><strong>And we're doing it vegan.</strong></h2>
+        <div class="button-container">
+          <a type="button" class="btn" id="learn-more-button" href="/about-vegan-brunch">🥑 About vegan brunch</a>
+          <button type="button" class="btn" id="learn-more-button">🤓 About this site</button>
+        </div>
+        
+    </div>
+
     <div class="container">
-      <div class="intro-section">
-        <h1>Vegan Brunch<br>Society<br>🥞🍓🥑</h1>
-        <h2>We're over spending $50 on mediocre hollandaise sauce and toast.<br><br><strong>We're making brunch at home, and we're making it vegan.</strong></h3>
+      
+      <div>
+        <h2 id="our-recipes-title">
+          Our Recipes
+        </h2>
       </div>
+
       <div class="card-columns">
         {%RECIPE_CARD%}
       </div>
-      
 
-<!-- BOOTSTRAP MASONRY CARDS -->
-      <!-- <div class="cards-container">
-          <div class="card-columns">
-              <div class="card recipe-card">
-                <img class="card-img-top" src="https://minimalistbaker.com/wp-content/uploads/2014/03/Vegan-French-Toast-Simple-healthy-and-surprisingly-similar-to-traditional-french-toast.jpg" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Vegan French Toast</h5>
-                  <p class="card-text">Yes, it's possible. And delicious.</p>
-                  <a href="#" class="btn btn-primary stretched-link recipe-card-link">Yes. Want.</a>
-                </div>
-              </div>
-              <div class="card recipe-card">
-                  <img class="card-img-top" src="https://minimalistbaker.com/wp-content/uploads/2014/10/How-to-Make-Coconut-Whipped-Cream.jpg" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Coconut Whipped Cream</h5>
-                    <p class="card-text">Your body is absolutely not ready for this.</p>
-                    <a href="#" class="btn btn-primary stretched-link recipe-card-link">Yes. Want.</a>
-                  </div>
-              </div>
-              <div class="card recipe-card">
-                  <img class="card-img-top" src="https://cookieandkate.com/images/2012/04/avocado-toast-recipe-3-550x824.jpg" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Avocado Toast</h5>
-                    <p class="card-text">You are an artist, and avocado toast is your palette.</p>
-                    <a href="#" class="btn btn-primary stretched-link recipe-card-link">Yes. Want.</a>
-                  </div>
-              </div>
-              <div class="card recipe-card">
-                  <img class="card-img-top" src="https://i2.wp.com/avirtualvegan.com/wp-content/uploads/2015/07/omelette.jpg" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Coconut Whipped Cream</h5>
-                    <p class="card-text">Your body is absolutely not ready for this. And neither are your tastebuds or your mind.</p>
-                    <a href="#" class="btn btn-primary stretched-link recipe-card-link">Yes. Want.</a>
-                  </div>
-              </div>
-              <div class="card recipe-card">
-                  <img class="card-img-top" src="https://www.julieslifestyle.com/src/Frontend/Files/blog/images/968x560/vegan-keto-breakfast-strawberry-chia-pudding-with-granola-low-carb-sugar-free-paleo-en-969.jpg" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Vegan Omelette</h5>
-                    <p class="card-text">You are an artist, and avocado toast is your palette.</p>
-                    <a href="#" class="btn btn-primary stretched-link recipe-card-link">Yes. Want.</a>
-                  </div>
-              </div>
-              <div class="card recipe-card">
-                  <img class="card-img-top" src="https://www.veganricha.com/wp-content/uploads/2019/07/Instant-Pot-spinach-Dal-veganricha-5683.jpg" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Vegan French Toast</h5>
-                    <p class="card-text">Yes, it's possible. And delicious.</p>
-                    <a href="#" class="btn btn-primary stretched-link recipe-card-link">Yes. Want.</a>
-                  </div>
-                </div>
-    
-            </div>
-      </div> -->
     </div>
+
   </body>
+
 </html>
+
+  <!-- Green square logo: https://i.imgur.com/LySsD2P.png -->
+  <!-- Circle "vegan brunch society": https://i.imgur.com/zIFeVK2.png -->
