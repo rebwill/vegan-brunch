@@ -5,9 +5,10 @@ module.exports = (temp, recipe) => {
     output = output.replace(/{%IMAGE%}/g, recipe.image);
     output = output.replace(/{%RECIPELINK%}/g, recipe.recipeLink);
     output = output.replace(/{%EMOJI%}/g, recipe.emoji);
-    output = output.replace(/{%INGREDIENTS%}/g, recipe.ingredients);
     output = output.replace(/{%SHORTDESC%}/g, recipe.shortDescription);
     output = output.replace(/{%LONGDESC%}/g, recipe.longDescription);
+    output = output.replace(/{%INGREDIENTS%}/g, recipe.ingredients);
+
 
     return output;
 }
