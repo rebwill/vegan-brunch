@@ -71,10 +71,10 @@ const server = http.createServer((req, res) => {       // each time a new reques
         const output = tempOverview.replace('{%RECIPE_CARD%}', cardsHtml);
             res.end(output);
     
-    // Product 
+    // Recipe 
     } else if (pathname === '/recipe') {
         res.writeHead(200, {'Content-type': 'text/html'});
-        const recipe = dataObj[query.id];
+        const recipe = dataObj[query.id];   // $recipe is ONE recipe object
         const output = replaceTemplate(tempRecipe, recipe);
 
         res.end(output);
