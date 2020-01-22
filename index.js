@@ -1,15 +1,12 @@
 // Core modules first
-const fs = require('fs');
-const http = require('http');
-const url = require('url');
-
+const fs = require("fs");
+const http = require("http");
+const url = require("url");
 
 // Dynamic Port for Heroku
 const PORT = process.env.PORT || 3000;
 // Then our own modules
-const replaceTemplate = require('./modules/replaceTemplate'); // we are saving this into a variable to use in this module.
-
-
+const replaceTemplate = require("./modules/replaceTemplate"); // we are saving this into a variable to use in this module.
 
 /////////////////////////////
 // FILES
@@ -48,59 +45,79 @@ const replaceTemplate = require('./modules/replaceTemplate'); // we are saving t
 /////////////////////////////
 // SERVER
 
-const tempOverview = fs.readFileSync(`${__dirname}/templates/template-overview.html`, 'utf-8');
-const tempCard = fs.readFileSync(`${__dirname}/templates/template-card.html`, 'utf-8');
-const tempRecipe = fs.readFileSync(`${__dirname}/templates/template-recipe.html`, 'utf-8');
-const aboutBrunch = fs.readFileSync(`${__dirname}/templates/aboutBrunch.html`, 'utf-8');
-const aboutSite = fs.readFileSync(`${__dirname}/templates/aboutSite.html`, 'utf-8');
+const tempOverview = fs.readFileSync(
+  `${__dirname}/templates/template-overview.html`,
+  "utf-8"
+);
+const tempCard = fs.readFileSync(
+  `${__dirname}/templates/template-card.html`,
+  "utf-8"
+);
+const tempRecipe = fs.readFileSync(
+  `${__dirname}/templates/template-recipe.html`,
+  "utf-8"
+);
+const aboutBrunch = fs.readFileSync(
+  `${__dirname}/templates/aboutBrunch.html`,
+  "utf-8"
+);
+const aboutSite = fs.readFileSync(
+  `${__dirname}/templates/aboutSite.html`,
+  "utf-8"
+);
 
-const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, 'utf-8');
+const data = fs.readFileSync(`${__dirname}/dev-data/data.json`, "utf-8");
 const dataObj = JSON.parse(data);
 // ^we use the sync version here because this is only called once at the beginning, to load the file and then it doesn't happen again.
 // we are loading this data (product JSON, templates) at the beginning and reading to memory instead of making a new request every time they are needed.
 
-const server = http.createServer((req, res) => {       // each time a new request hits the server, this callback function will be called. Res is the response object.
-    
+const server = http
+  .createServer((req, res) => {
+    // each time a new request hits the server, this callback function will be called. Res is the response object.
+
     const { query, pathname } = url.parse(req.url, true);
 
-    // Overview 
-    if (pathname === '/' || pathname === '/overview' ) {
-        res.writeHead(200, {'Content-type': 'text/html'});
+    // Overview
+    if (pathname === "/" || pathname === "/overview") {
+      res.writeHead(200, { "Content-type": "text/html" });
 
-        const cardsHtml = dataObj.map(el => replaceTemplate(tempCard, el)).join('');
-        const output = tempOverview.replace('{%RECIPE_CARD%}', cardsHtml);
-            res.end(output);
-    
-    // Recipe 
-    } else if (pathname === '/recipe') {
-        res.writeHead(200, {'Content-type': 'text/html'});
-        const recipe = dataObj[query.id];   // $recipe is ONE recipe object
-        const output = replaceTemplate(tempRecipe, recipe);
+      const cardsHtml = dataObj
+        .map(el => replaceTemplate(tempCard, el))
+        .join("");
+      const output = tempOverview.replace("{%RECIPE_CARD%}", cardsHtml);
+      res.end(output);
 
-        res.end(output);
-    
-    // About Brunch
-    } else if (pathname === '/about-vegan-brunch') {
-        res.writeHead(200, {'Content-type': 'text/html'});
-        res.end(aboutBrunch);
+      // Recipe
+    } else if (pathname === "/recipe") {
+      res.writeHead(200, { "Content-type": "text/html" });
+      const recipe = dataObj[query.id]; // $recipe is ONE recipe object
+      const output = replaceTemplate(tempRecipe, recipe);
 
-    // About Site
-    } else if (pathname === '/about-the-site') {
-        res.writeHead(200, {'Content-type': 'text/html'});
-        res.end(aboutSite);
+      res.end(output);
 
-    // API 
-    } else if (pathname === '/api') {
-        res.writeHead(200, {'Content-type': 'application/json'});
-        res.end(data);
+      // About Brunch
+    } else if (pathname === "/about-vegan-brunch") {
+      res.writeHead(200, { "Content-type": "text/html" });
+      res.end(aboutBrunch);
 
-    // Not found
+      // About Site
+    } else if (pathname === "/about-the-site") {
+      res.writeHead(200, { "Content-type": "text/html" });
+      res.end(aboutSite);
+
+      // API
+    } else if (pathname === "/api") {
+      res.writeHead(200, { "Content-type": "application/json" });
+      res.end(data);
+
+      // Not found
     } else {
-        res.writeHead(404, {
-            'Content-type': 'text/html'
-        });
-        res.end("<h1>This page could not be found.</h1>");
+      res.writeHead(404, {
+        "Content-type": "text/html"
+      });
+      res.end("<h1>This page could not be found.</h1>");
     }
-}).listen(PORT, () => {
+  })
+  .listen(PORT, () => {
     console.log("Listening to requests on port 8000");
-});
+  });

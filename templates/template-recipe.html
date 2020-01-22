@@ -4,9 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900|Solway:400,500,700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/d81849d7b2.js" crossorigin="anonymous"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,900|Solway:400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/d81849d7b2.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>{%EMOJI%} {%NAME%} // Vegan Brunch Society</title>
 
@@ -27,7 +38,7 @@
       body {
         padding: 5rem 5rem 10rem;
         line-height: 1.7;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         color: black;
         min-height: 100vh;
         background: linear-gradient(to bottom right, white, rgb(245, 210, 97));
@@ -36,12 +47,17 @@
         background-repeat: no-repeat;
         background-attachment: fixed;
       }
+      @media only screen and (max-width: 768px) {
+        body {
+          padding: 2rem 2rem 5rem;
+        }
+      }
 
       .title-section {
         width: 100%;
         height: auto;
         box-sizing: content-box;
-        padding: .75rem;
+        padding: 0.75rem;
         position: relative;
         background-color: transparent;
         color: black;
@@ -52,41 +68,26 @@
       }
 
       h1 {
-        font-family: 'Solway', serif;
+        font-family: "Solway", serif;
         color: black;
         text-align: center;
         font-size: 55px;
         padding-top: 0;
       }
 
-      /* h1::before {
-        content: '';
-        display: block;
-        height: 65%;
-        width: 49%;
-        position: absolute;
-        top: 105%;
-        left: 50%;
-        background: linear-gradient(to bottom, #9be15d, #00e3ae);
-        opacity: 0.8;
-        z-index: -1;
-        transform: skewY(370deg) translate(-50%, -50%);
-      } */
-      
       h4 {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         text-align: center;
         font-size: 30px;
         font-weight: 400;
       }
 
       .container {
-        width: 95rem;
+        /* width: 95rem; */
         margin: 0 auto;
       }
 
       .product {
-        width: 60rem;
         margin: 0 auto;
         margin-top: 50px;
         background: white;
@@ -96,29 +97,13 @@
       }
 
       .product__hero {
-        /* position: relative; */
         height: 400px;
-        /* overflow: hidden; */
         background-image: url("{%IMAGE%}");
         border-top-left-radius: 20px;
         border-top-right-radius: 20px;
         background-position: center;
         background-size: cover;
       }
-
-      /* .product__hero::before {
-        content: '';
-        display: block;
-        height: 100%;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-image: url("https://minimalistbaker.com/wp-content/uploads/2014/03/Vegan-French-Toast-Simple-healthy-and-surprisingly-similar-to-traditional-french-toast.jpg");
-        object-fit: cover;
-        /* opacity: 0.5; */
-        /* z-index: 100;
-      } */
 
       .product__back:link,
       .product__back:visited {
@@ -150,18 +135,10 @@
       .product__name {
         background: white;
         padding: 2rem;
-        font-family: 'Solway', serif;
+        font-family: "Solway", serif;
         color: black;
         text-align: center;
         font-size: 45px;
-        /* word-spacing: 2px; */
-        /* transform: scale(1.07) skewX(-20deg);
-        box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
-        text-decoration: none;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s; */
       }
 
       .product__details {
@@ -172,20 +149,39 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 1.5rem;
       }
+      @media only screen and (max-width: 768px) {
+        .product__details {
+          background-color: #eee;
+          padding: 2rem 2rem;
+          font-size: 1.9rem;
+          display: grid;
+          grid-template-columns: none;
+        }
+      }
 
       .ingredients-title {
-        font-family: 'Solway', serif;
+        font-family: "Solway", serif;
         font-weight: 500;
       }
 
       .ingredients-list {
         list-style-type: circle;
-      } 
+      }
+      @media only screen and (max-width: 768px) {
+        .ingredients-list {
+          padding: 0rem 3rem 0rem 3rem;
+        }
+      }
 
       .product__description {
         padding: 0rem 6rem 2rem 6rem;
         font-size: 1.6rem;
         line-height: 1.8;
+      }
+      @media only screen and (max-width: 768px) {
+        .product__description {
+          padding: 0rem 3rem 1rem 3rem;
+        }
       }
 
       .product__link:link,
@@ -210,7 +206,6 @@
 
       .product__link:hover,
       .product__link:active {
-        /* background-color: #fadba2; */
         transform: scale(1.1) skewX(-20deg);
         box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
         color: #f03750;
@@ -229,10 +224,12 @@
 
   <body>
     <div class="container">
-        <div class="title-section">
-            <h1>Vegan Brunch<br>
-            Society <i class="fas fa-mug-hot"></i></h1>
-          </div>
+      <div class="title-section">
+        <h1>
+          Vegan Brunch<br />
+          Society <i class="fas fa-mug-hot"></i>
+        </h1>
+      </div>
 
       <figure class="product">
         <a href="/overview" class="product__back">
@@ -241,18 +238,12 @@
         <div class="product__hero"></div>
         <h2 class="product__name">{%NAME%}</h2>
         <p class="product__description">
-            {%LONGDESC%}
+          {%LONGDESC%}
         </p>
         <div class="product__details">
           <h4 class="ingredients-title">Ingredients</h4>
           <ul class="ingredients-list">
             {%INGREDIENT_LI%}
-            <!-- <li>maple syrup</li>
-            <li>chia seeds</li>
-            <li>almond milk</li>
-            <li>bread</li>
-            <li>cinnamon</li>
-            <li>vanilla extract</li> -->
           </ul>
         </div>
         <a href="{%RECIPELINK%}" class="product__link">
@@ -260,9 +251,7 @@
           <span>Get the recipe </span>
           <span class="emoji-left">&nbsp {%EMOJI%}</span>
         </a>
-  
       </figure>
-      
     </div>
   </body>
 </html>

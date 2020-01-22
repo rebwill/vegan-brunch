@@ -4,13 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,900|Solway:400,500,700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,900|Solway:400,500,700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="icon"
       href="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/232/avocado_1f951.png"
     />
-    <script src="https://kit.fontawesome.com/d81849d7b2.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/d81849d7b2.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Vegan Brunch Society</title>
 
@@ -27,8 +38,8 @@
         width: 100%;
         height: auto;
         box-sizing: content-box;
-        padding-top: .75rem;
-        padding-bottom: .75rem;
+        padding-top: 0.75rem;
+        padding-bottom: 0.75rem;
         position: relative;
         background-color: transparent;
         color: black;
@@ -38,7 +49,7 @@
         text-shadow: 1.2px 1.2px rgba(240, 55, 80, 0.7);
       }
       #site-title {
-        font-family: 'Solway', serif;
+        font-family: "Solway", serif;
         text-align: center;
         font-size: 55px;
         padding-top: 0;
@@ -48,7 +59,7 @@
         margin-bottom: 50px;
       }
       h2 {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         text-align: center;
         font-size: 1.6rem;
         font-weight: 400;
@@ -58,14 +69,6 @@
         padding-bottom: 15px;
         margin-bottom: 30px;
       }
-      /* h3 {
-        font-family: 'Solway', serif;
-        text-align: left;
-        font-size: 30px;
-      } */
-      /* .fa-bread-slice {
-        color: white;
-      } */
 
       .button-container {
         text-align: center;
@@ -79,7 +82,7 @@
         padding-left: 15px;
         padding-right: 15px;
         display: inline-block;
-        font-family: 'Solway', serif;
+        font-family: "Solway", serif;
         font-weight: 500;
         /* box-shadow: 1px 4px 10px black; */
         box-shadow: 2px 2px 1px 1px black;
@@ -98,7 +101,7 @@
       }
 
       #our-recipes-title {
-        font-family: 'Solway', serif;
+        font-family: "Solway", serif;
         text-align: left;
         font-size: 35px;
         padding-left: 20px;
@@ -145,22 +148,29 @@
       .card-body {
         padding: 40px;
       }
+      @media only screen and (max-width: 768px) {
+        .card-body {
+          padding: 1.5rem;
+          text-align: center;
+        }
+      }
 
       .card-title {
-        font-family: 'Solway', serif;
+        font-family: "Solway", serif;
         font-size: 25px;
         font-weight: 500;
         text-transform: capitalize;
       }
 
       .card-text {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-size: 16 px;
       }
 
-      .recipe-card-link, .recipe-card-link:hover {
+      .recipe-card-link,
+      .recipe-card-link:hover {
         background-color: #f03750;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 900;
         border: none;
       }
@@ -168,23 +178,38 @@
   </head>
 
   <body>
-
     <div class="title-section">
-      <div id="site-title">Vegan Brunch<br>
-      Society <i class="fas fa-mug-hot"></i></div>
+      <div id="site-title">
+        Vegan Brunch<br />
+        Society <i class="fas fa-mug-hot"></i>
+      </div>
     </div>
 
     <div class="intro-section">
-        <h2 id="slogan">Eating in is the new eating out.<br><strong>And we're doing it vegan.</strong></h2>
-        <div class="button-container">
-          <a type="button" class="btn" id="learn-more-button" href="/about-vegan-brunch">🥑 About vegan brunch</a>
-          <a type="button" class="btn" id="learn-more-button" href="about-the-site">🤓 About this site</a>
-        </div>
-        
+      <h2 id="slogan">
+        Eating in is the new eating out.<br /><strong
+          >And we're doing it vegan.</strong
+        >
+      </h2>
+      <div class="button-container">
+        <a
+          type="button"
+          class="btn"
+          id="learn-more-button"
+          href="/about-vegan-brunch"
+          >🥑 About vegan brunch</a
+        >
+        <a
+          type="button"
+          class="btn"
+          id="learn-more-button"
+          href="about-the-site"
+          >🤓 About this site</a
+        >
+      </div>
     </div>
 
     <div class="container">
-      
       <div>
         <h2 id="our-recipes-title">
           Our Recipes
@@ -194,12 +219,9 @@
       <div class="card-columns">
         {%RECIPE_CARD%}
       </div>
-
     </div>
-
   </body>
-
 </html>
 
-  <!-- Green square logo: https://i.imgur.com/LySsD2P.png -->
-  <!-- Circle "vegan brunch society": https://i.imgur.com/zIFeVK2.png -->
+<!-- Green square logo: https://i.imgur.com/LySsD2P.png -->
+<!-- Circle "vegan brunch society": https://i.imgur.com/zIFeVK2.png -->

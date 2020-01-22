@@ -22,11 +22,7 @@
     "image": "https://minimalistbaker.com/wp-content/uploads/2014/10/How-to-Make-Coconut-Whipped-Cream.jpg",
     "recipeLink": "https://minimalistbaker.com/how-to-make-coconut-whipped-cream/",
     "emoji": "🥥",
-    "ingredients": [
-      "coconut milk",
-      "powdered sugar",
-      "vanilla extract"
-    ],
+    "ingredients": ["coconut milk", "powdered sugar", "vanilla extract"],
     "shortDescription": "Many vegan and non-vegan minds have been permanently blown by this cream. Use with caution (or just eat with wild abandon; that works too).",
     "longDescription": "We recommend bringing this heavenly cream to your most vegan-hating family gatherings and soaking in the ooh's and ahh's from your uncle with the cholesterol-hardened arteries before announcing that it is a 100% card-carrying vegan recipe. The best part is that it's incredibly easy to make — if you don't have a mixer, you can just use a whisk. If you don't have a whisk, you can use a fork. If you don't have a fork, maybe work on solving that first. You have bigger problems."
   },
@@ -54,11 +50,7 @@
     "image": "https://www.modernhoney.com/wp-content/uploads/2018/03/Pina-Colada-Smoothie-2.jpg",
     "recipeLink": "https://www.modernhoney.com/pina-colada-smoothie/6",
     "emoji": "🍍",
-    "ingredients": [
-      "pineapple",
-      "coconut milk",
-      "banana"
-    ],
+    "ingredients": ["pineapple", "coconut milk", "banana"],
     "shortDescription": "Three simple ingredients. Infinite creaminess and deliciousness.",
     "longDescription": "I'll address the elephant in the room first: you can make this with or without alcohol depending on what kind of brunch you're trying to have. But in either case, this is going to be over 9,000 times more delicious than any piña colada mix you've ever encountered."
   },
@@ -68,11 +60,7 @@
     "image": "https://cupfulofkale.com/wp-content/uploads/2019/01/Carrot-Orange-and-Ginger-Juice.jpeg",
     "recipeLink": "https://cupfulofkale.com/immune-boosting-orange-carrot-ginger-juice/",
     "emoji": "🥕",
-    "ingredients": [
-      "orange",
-      "carrot",
-      "ginger"
-    ],
+    "ingredients": ["orange", "carrot", "ginger"],
     "shortDescription": "You don't need to do a full juice cleanse to reap the spicy benefits of this zingy nectar.",
     "longDescription": "Come get yo' spicy, immune-boosting life. Orange, carrot, and ginger juice is here to cleanse and delight your whole body. Fresh, citrusy, and slightly spicy depending on how brave you are when it comes to fresh ginger, OCGJ will cool you down in the summer, warm you up in the winter, and blast you with vitamins year-round."
   },
@@ -143,12 +131,51 @@
     "image": "https://aseasyasapplepie.com/wp-content/uploads/2017/03/silken-tofu-chooclate-mousse-2.jpg",
     "recipeLink": "https://aseasyasapplepie.com/silken-tofu-chocolate-mousse/",
     "emoji": "🍨",
-    "ingredients": [
-      "tofu",
-      "maple syrup",
-      "dark chocolate"
-    ],
+    "ingredients": ["tofu", "maple syrup", "dark chocolate"],
     "shortDescription": "Before you sit down to eat, we recommend preparing everyone emotionally for this rich, chocolatey, vegan mousse.",
     "longDescription": "Ok, I know. You're feeling VERY skeptical of using tofu in dessert — I was too. But hear me out. Tofu's whole thing is that it takes the flavor of whatever you cook/mix it with. The key to this dessert is to let it sit overnight and let the tofu really marinate in the chocolateyness. You will not believe what is going to happen in your mouth after that. Pro tip: put it on pancakes with strawberries or raspberries. If you really want to blow your guests' minds and send them into an actual medical sugar coma, combine with coconut whipped cream. Caution: this might be illegal?"
+  },
+  {
+    "id": 9,
+    "name": "Chia Seed Pudding",
+    "image": "https://minimalistbaker.com/wp-content/uploads/2018/04/How-to-make-chia-pudding-Just-4-ingredients-required-SO-thick-and-creamy-and-delicious-every-time-vegan-glutenfree-chiapudding-recipe-minimalistbaker-768x1152.jpg",
+    "recipeLink": "https://minimalistbaker.com/how-to-make-chia-pudding/",
+    "emoji": "🍨",
+    "ingredients": [
+      "chia seeds",
+      "maple syrup",
+      "almond milk",
+      "vanilla extract"
+    ],
+    "shortDescription": "The magic of chia seeds allows us to create a sweet, creamy, yet healthy breakfast (or dessert, frankly).",
+    "longDescription": "I always thought of chia pudding as one of those things that people with a lot of time to make elaborate breakfasts must eat every day. But once I made it I realized it literally involves just stirring a couple things in a bowl and putting it in the fridge. You can make it even easier and use sweetened, vanilla-flavored almond milk and save yourself the addition of the maple syrup and vanilla extract, making it just TWO ingredients! Either way, it's delicious and actually pretty healthy, as it contains a good amount of protein. I recommend eating it with fruit on the top (or if you're feeling fancy, fruit on the bottom)!"
+  },
+  {
+    "id": 10,
+    "name": "Berry Compote",
+    "image": "https://minimalistbaker.com/wp-content/uploads/2014/07/Simple-Fruit-Compote-2-ingredients-15-minutes-great-to-have-on-hand-for-pancakes-waffles-french-toast-oats-and-more.jpg",
+    "recipeLink": "https://minimalistbaker.com/simple-berry-compote/",
+    "emoji": "🍓",
+    "ingredients": ["frozen berries", "sugar"],
+    "shortDescription": "More tangy and fancy than just putting jam on your pancakes, toast, or chia pudding, berry compote is hella easy to whip up and good for...almost anything.",
+    "longDescription": "This is a great item for the least cooking-inclined person at your brunch to make. It literally just involves dumping a bag of frozen berries (of your choice) into a saucepan on low heat and stirring them until they are all melty and jammy. And not burning them. The recipe calls for orange juice, but we didn't really have that, so we squeezed a little bit of an actual orange in there with some strawberries and called it a day. You can add however much sugar you want; we didn't add a ton because we actually liked the tanginess of the fruit! Pro tip: this berry compote is particularly good on top of chia pudding."
+  },
+  {
+    "id": 11,
+    "name": "Way-Better-Than-Store-Bought Hummus",
+    "image": "https://www.inspiredtaste.net/wp-content/uploads/2019/03/How-to-Make-Homemade-Hummus-1200.jpg",
+    "recipeLink": "https://www.inspiredtaste.net/15938/easy-and-smooth-hummus-recipe/",
+    "emoji": "🥣",
+    "ingredients": [
+      "chick peas",
+      "lemon juice",
+      "garlic",
+      "tahini",
+      "olive oil",
+      "salt",
+      "cumin"
+    ],
+    "shortDescription": "Warning: do not make this hummus if you want to continue eating store-bought hummus in blissful ignorance. Once you try this, you'll never go back.",
+    "longDescription": "For many of us, one of the hardest parts of reducing the amount of animal products we consume is the ever-ubiquitous CHEESE. It's been known to tempt even the most morally convinced vegan believer (hello, it's me). But I've discovered that a great way to reduce cheese in my diet is replacing it with hummus — turns out in many instances I'm really just craving something creamy and salty, and hummus often does the trick! With that being said, storebought hummus is mediocre at best, high in sodium, etc. When I discovered this homemade hummus, I quickly realized there was no going back — it's easy to make and 10x more delicious than storebought. Have it for brunch, on toast, in sandwiches, or in salads!"
   }
 ]
